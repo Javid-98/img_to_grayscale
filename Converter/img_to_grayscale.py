@@ -2,7 +2,7 @@ from PIL import Image
 import numpy as np
 import matplotlib.pyplot as plt
 
-img = np.array(Image.open("Images/iss.jpg"))
+img = np.array(Image.open("Images/iss.jpg")).copy()
 
 plt.imshow(img)
 
@@ -26,7 +26,7 @@ def rgb_to_gray(img):
     return grayImage
 
 
-gimg = rgb_to_gray(img.copy())
-plt.imshow(gimg)
-plt.show()
+# gimg = rgb_to_gray(img.copy())
+# plt.imshow(gimg)
+# plt.show()
 
