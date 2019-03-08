@@ -8,7 +8,7 @@ plt.imshow(img)
 
 
 def rgb_to_gray(img):
-    grayImage = np.zeros(img.shape)
+
     R = np.array(img[:, :, 0])
     G = np.array(img[:, :, 1])
     B = np.array(img[:, :, 2])
